@@ -6,23 +6,52 @@ const StyledLayout = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: red;
+  background-color: black;
 `;
 
 const StyledContainer = styled.div`
   display: flex;
-  gap: 10px;
-  background-color: red;
+  flex-direction: column;
+
+  background-color: #424242;
+
+
+  &>div:nth-child(2){
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+
+  }
+  h2{
+    color: white;
+    font-size: 64px;
+    margin: 20px 0 20px 0;
+  }
 `;
+
 
 const Layout = () => {
   return (
     <StyledLayout>
       <StyledContainer>
-        <Card />
-        <Card />
-        <Card />
+
+        <div>
+          <h2>Choose your favourite</h2>
+        </div>
+
+        <div>
+          <Card />
+          <Card />
+          <Card />
+        </div>
+
       </StyledContainer>
+
+{/*       <StyledContainer>
+        <div>
+          <h2>Choose your favourite</h2>
+        </div>
+      </StyledContainer> */}
     </StyledLayout>
   );
 };
