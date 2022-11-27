@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import CustomButton from "../Button";
-import HeaderImage from "../Image";
+// import HeaderImage from "../Image/index";
 
 const StyledCard = styled.div`
   width: 400px;
   height: 425px;
-  background-color: #c17d7f;
-  border-radius: 15px;
+  background-color: #cfcfcf;
+  border-radius: 1rem;
   overflow: hidden;
 
   display: flex;
@@ -22,25 +22,23 @@ const StyledCard = styled.div`
   
   &>div:nth-child(2){
     background-color: #fc9700;
-    padding: 20px;
+    padding: 1.2rem;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     &>div{
-      /* background-color: blue; */
-      font-size: 40px;
+      font-size: 2.5rem;
       font-weight: 500;
-      padding: 0 5px 0 5px;
+      padding: 0 0.3rem 0 0.3rem;
 
       &>div{
-        /* background-color: orange; */
         display: flex;
         justify-content: space-between;
 
         font-family: DM Sans;
-        font-size: 20px;
+        font-size: 1.2rem;
         font-weight: 500;
         font-style: italic;
       }
@@ -48,11 +46,12 @@ const StyledCard = styled.div`
   }
 `;
 
+
 const Card = () => {
   return( 
     <StyledCard>
       <div>
-        <HeaderImage></HeaderImage>
+        {/* <HeaderImage></HeaderImage> */}
       </div>
       
       <div> 

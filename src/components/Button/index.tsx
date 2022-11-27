@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
     border: none;
-    border-radius: 15px;
+    border-radius: 1rem;
     background: none;
-    background-color: ;
-    padding: 15px 40px;
-    font-size: 20px;
+    background-color: black;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     color: white;
     font-family: 'DM Sans';
     font-weight: bold;
